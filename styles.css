@@ -1,0 +1,77 @@
+body{
+  background: linear-gradient(145deg, #1b1b1b, #232323); /* Gradiente suave para efeito fosco */
+  color: white; /* Para contraste */
+  margin: 0;
+}
+
+
+#search {
+  background: linear-gradient(145deg, #000, #333);
+  color: white;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); 
+  transition: all 0.3s ease-in-out; /* Animação suave */
+}
+
+
+#search:hover {
+  background: linear-gradient(145deg, #5d3fd3, #7a5bfc); 
+  box-shadow: 0 4px 10px rgba(123, 81, 255, 0.6), 0 0 15px rgba(123, 81, 255, 0.8); 
+  color: white; 
+}
+
+
+.navbar {
+  background: linear-gradient(145deg, #000, #333); /* Gradiente mais brilhante */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* Efeito de brilho */
+  
+}
+.nav-item{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#title {
+  font-size: 30px;
+  color: blueviolet; 
+  text-shadow: none; 
+  transition: all 0.3s ease-in-out; /* Suaviza a transição */
+}
+
+#title:hover {
+  text-shadow: 0 0 8px rgba(123, 81, 255, 0.8), 
+              0 0 15px rgba(123, 81, 255, 0.6), 
+              0 0 25px rgba(123, 81, 255, 0.5); 
+  color:blueviolet; 
+}
+#pesquisa:focus{
+  outline: none; /* Remove a borda padrão no foco */
+  box-shadow: 0 4px 10px rgba(123, 81, 255, 0.6), 0 0 15px rgba(123, 81, 255, 0.8); /* Mantém o brilho */
+}
+
+  
+  .nav-link {
+    color: white !important; }
+
+  .freckle-face-regular {
+    font-family: "Freckle Face", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: blueviolet;
+  }
+
+  #navbar-brand {
+    font-size: 18px; 
+    transition: transform 0.3s ease; /* Suaviza a transformação */
+  }
+  
+  #navbar-brand:hover {
+    transform: scale(1.2); 
+  }
+  
+  .container {
+    background-color: blueviolet;
+    margin-top: 5%;
+    border-radius: 10px;
+    height: 70vh;
+    width: 100vh;
+  }
