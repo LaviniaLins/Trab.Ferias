@@ -1,7 +1,10 @@
 body{
   background: linear-gradient(145deg, #1b1b1b, #232323); /* Gradiente suave para efeito fosco */
-  color: white; /* Para contraste */
+  color: white; 
   margin: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
 }
 
 
@@ -43,6 +46,10 @@ body{
               0 0 25px rgba(123, 81, 255, 0.5); 
   color:blueviolet; 
 }
+
+#pesquisa{
+  background-color: black;
+}
 #pesquisa:focus{
   outline: none; /* Remove a borda padrão no foco */
   box-shadow: 0 4px 10px rgba(123, 81, 255, 0.6), 0 0 15px rgba(123, 81, 255, 0.8); /* Mantém o brilho */
@@ -71,7 +78,8 @@ body{
   .container {
     background-color: blueviolet;
     margin-top: 5%;
+    margin-bottom: 10%;
     border-radius: 10px;
-    height: 70vh;
-    width: 100vh;
+    height: 120vh;
+    width: 120vh;
   }
