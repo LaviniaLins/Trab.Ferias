@@ -30,7 +30,7 @@
             </ul>
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" id="pesquisa" aria-label="Search" style="background-color: black; color: white; border-color: black;">
-              <button id="search" class="btn btn-outline-success" type="submit">Search</button>
+              <button id="search" class="btn btn-outline-success" type="submit">Pesquisar</button>
             </form>
           </div>
         </div>
@@ -48,47 +48,47 @@
                   </div>
                   <div class="col-md-6">
                       <label for="lastName" class="form-label">Sobrenome</label>
-                      <input type="text" class="form-control" id="lastName" placeholder="Seu sobrenome" required>
+                      <input type="text" class="form-control" style="border: none ;" id="pesquisa" placeholder="Seu sobrenome" required>
                       <div class="invalid-feedback">Por favor, insira seu sobrenome.</div>
                   </div>
               </div>
               <div class="row mb-3">
                   <div class="col-md-12">
                       <label for="email" class="form-label">Emaillgit statusl</label>
-                      <input type="email" class="form-control" id="email" placeholder="exemplo@email.com" required>
+                      <input type="email" class="form-control" style="border: none ;" id="pesquisa" placeholder="exemplo@email.com" required>
                       <div class="invalid-feedback">Por favor, insira um e-mail válido.</div>
                   </div>
               </div>
               <div class="row mb-3">
                   <div class="col-md-6">
                       <label for="password" class="form-label">Senha</label>
-                      <input type="password" class="form-control" id="password" placeholder="Senha" required>
+                      <input type="password" class="form-control" style="border: none ;" id="pesquisa" placeholder="Senha" required>
                       <div class="invalid-feedback">Por favor, insira uma senha.</div>
                   </div>
                   <div class="col-md-6">
                       <label for="confirmPassword" class="form-label">Confirmar Senha</label>
-                      <input type="password" class="form-control" id="confirmPassword" placeholder="Confirme sua senha" required>
+                      <input type="password" class="form-control" style="border: none ;" id="pesquisa" placeholder="Confirme sua senha" required>
                       <div class="invalid-feedback">As senhas não correspondem.</div>
                   </div>
               </div>
               <div class="row mb-3">
                   <div class="col-md-12">
                       <label for="address" class="form-label">Endereço</label>
-                      <input type="text" class="form-control" id="address" placeholder="Rua, número, bairro" required>
+                      <input type="text" class="form-control" style="border: none ;" id="pesquisa" placeholder="Rua, número, bairro" required>
                       <div class="invalid-feedback">Por favor, insira seu endereço.</div>
                   </div>
               </div>
               <div class="row mb-3">
                   <div class="col-md-6">
                       <label for="city" class="form-label">Cidade</label>
-                      <input type="text" class="form-control" id="city" placeholder="Sua cidade" required>
+                      <input type="text" class="form-control" style="border: none ;" id="pesquisa" placeholder="Sua cidade" required>
                       <div class="invalid-feedback">Por favor, insira sua cidade.</div>
                   </div>
                   <div class="col-md-6">
                       <label for="state" class="form-label">Estado</label>
-                      <select class="form-select" id="state" required>
-                          <option selected disabled value="">Escolha...</option>
-                          <option value="SP">São Paulo</option>
+                      <select class="form-select" style="border: none ;" id="pesquisa"  required>
+                          <option selected disabled value="" >Escolha...</option>
+                          <option  value="SP">São Paulo</option>
                           <option value="RJ">Rio de Janeiro</option>
                           <option value="MG">Minas Gerais</option>
                           <option value="RS">Rio Grande do Sul</option>
@@ -109,7 +109,7 @@
               </div>
               <div class="row">
                   <div class="col-md-12 text-center">
-                      <button type="submit" id="search" class="btn btn-primary">Cadastrar</button>
+                      <button type="submit" id="search" style="margin-top: 5%;" class="btn btn-primary">Cadastrar</button>
                   </div>
               </div>
           </form>
@@ -122,14 +122,14 @@
                 event.preventDefault();
                 event.stopPropagation();
             }
-            const password = document.getElementById('password').value;
-            const confirmPassword = document.getElementById('confirmPassword').value;
+            const password = document.getElementById('pesquisa').value;
+            const confirmPassword = document.getElementById('pesquisa').value;
             if (password !== confirmPassword) {
                 event.preventDefault();
                 event.stopPropagation();
-                document.getElementById('confirmPassword').setCustomValidity('As senhas não correspondem.');
+                document.getElementById('pesquisa').setCustomValidity('As senhas não correspondem.');
             } else {
-                document.getElementById('confirmPassword').setCustomValidity('');
+                document.getElementById('pesquisa').setCustomValidity('');
             }
             form.classList.add('was-validated');
         });

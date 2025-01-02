@@ -76,10 +76,16 @@ body{
   }
   
   .container {
-    background-color: blueviolet;
+    background-color: linear-gradient(145deg, #000, #333); /* Gradiente mais brilhante */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4); /* Efeito de brilho */
     margin-top: 5%;
     margin-bottom: 10%;
     border-radius: 10px;
-    height: 120vh;
+    height: 150vh;
     width: 120vh;
   }
+
+  #state option:hover {
+    background-color: purple !important;
+    color: white;
+}
